@@ -5,9 +5,10 @@
     <groupId>com.thealiyev</groupId>
     <artifactId>grokking-deep-learning-experimental-java-app</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
     <name>grokking-deep-learning-experimental-java-app</name>
     <description>Experimental Java App for Book of Grokking Deep Learning by Andrew W. Trask</description>
-    <packaging>jar</packaging>
 
     <developers>
         <developer>
@@ -18,11 +19,11 @@
     </developers>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <logback-classic.version>1.5.18</logback-classic.version>
         <slf4j-api.version>2.0.17</slf4j-api.version>
         <junit.version>3.8.1</junit.version>
         <java.version>17</java.version>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
