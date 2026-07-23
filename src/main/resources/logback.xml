@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-    <property name="FILE" value="var/logs/tagly-backend/api.log"/>
+    <property name="FILE" value="var/logs/grokking-deep-learning-experimental-java-app/app.log"/>
 
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
