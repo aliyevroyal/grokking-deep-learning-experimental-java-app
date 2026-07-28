@@ -2,13 +2,13 @@ package com.thealiyev.chapter3;
 
 import java.util.ArrayList;
 
-public class ASimpleNeuralNetworkWithSingleInput {
+public class ASimpleNeuralNetworkWithSingleInputAndSingleOutput {
     private ArrayList<Double> toes;
     private double input;
     private double weight;
     private double prediction;
 
-    public ASimpleNeuralNetworkWithSingleInput() {
+    public ASimpleNeuralNetworkWithSingleInputAndSingleOutput() {
         toes = new ArrayList<>();
         toes.add(8.5);
         toes.add(9.5);
@@ -19,7 +19,7 @@ public class ASimpleNeuralNetworkWithSingleInput {
         weight = 0.1;
     }
 
-    public void neuralNetwork() {
+    public void predict() {
         prediction = input * weight;
     }
 

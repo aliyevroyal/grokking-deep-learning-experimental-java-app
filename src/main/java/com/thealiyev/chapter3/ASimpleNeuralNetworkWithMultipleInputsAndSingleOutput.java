@@ -2,7 +2,7 @@ package com.thealiyev.chapter3;
 
 import java.util.ArrayList;
 
-public class ASimpleNeuralNetworkWithMultipleInputs {
+public class ASimpleNeuralNetworkWithMultipleInputsAndSingleOutput {
     private ArrayList<Double> theNumberOfToesPerPlayer;
     private ArrayList<Double> wonPercent;
     private ArrayList<Double> theNumberOfFansInMillion;
@@ -10,7 +10,7 @@ public class ASimpleNeuralNetworkWithMultipleInputs {
     private ArrayList<Double> weights;
     private double prediction;
 
-    public ASimpleNeuralNetworkWithMultipleInputs() {
+    public ASimpleNeuralNetworkWithMultipleInputsAndSingleOutput() {
         theNumberOfToesPerPlayer = new ArrayList<>();
         theNumberOfToesPerPlayer.add(8.5);
         theNumberOfToesPerPlayer.add(9.5);
@@ -42,7 +42,7 @@ public class ASimpleNeuralNetworkWithMultipleInputs {
         prediction = 0.0;
     }
 
-    public void neuralNetwork() {
+    public void predict() {
         for (int counter = 0; counter < inputs.size(); counter = counter + 1) {
             prediction = prediction + inputs.get(counter) * weights.get(counter);
         }
