@@ -45,7 +45,6 @@ public class ASimpleNeuralNetworkWithMultipleInputsAndMultipleOutputs {
             inputsVector.add(theNumberOfFansInMillion.get(counter));
             inputsMatrix.add(inputsVector);
         }
-        LOGGER.info("inputsMatrix: " + inputsMatrix);
 
         weightsMatrix = new ArrayList<>();
         weightsVector = new ArrayList<>();
@@ -65,7 +64,6 @@ public class ASimpleNeuralNetworkWithMultipleInputsAndMultipleOutputs {
         weightsVector.add(1.3);
         weightsVector.add(0.1);
         weightsMatrix.add(weightsVector);
-        LOGGER.info("weightsMatrix: " + weightsMatrix);
     }
 
     public void predict() {
