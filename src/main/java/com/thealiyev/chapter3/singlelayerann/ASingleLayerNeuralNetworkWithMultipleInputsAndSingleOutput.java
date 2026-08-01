@@ -1,8 +1,8 @@
-package com.thealiyev.chapter3;
+package com.thealiyev.chapter3.singlelayerann;
 
 import java.util.ArrayList;
 
-public class ASimpleNeuralNetworkWithMultipleInputsAndSingleOutput {
+public class ASingleLayerNeuralNetworkWithMultipleInputsAndSingleOutput {
     private ArrayList<Double> theNumberOfToesPerPlayer;
     private ArrayList<Double> wonPercent;
     private ArrayList<Double> theNumberOfFansInMillion;
@@ -10,7 +10,7 @@ public class ASimpleNeuralNetworkWithMultipleInputsAndSingleOutput {
     private ArrayList<Double> weights;
     private double prediction;
 
-    public ASimpleNeuralNetworkWithMultipleInputsAndSingleOutput() {
+    public ASingleLayerNeuralNetworkWithMultipleInputsAndSingleOutput() {
         theNumberOfToesPerPlayer = new ArrayList<>();
         theNumberOfToesPerPlayer.add(8.5);
         theNumberOfToesPerPlayer.add(9.5);

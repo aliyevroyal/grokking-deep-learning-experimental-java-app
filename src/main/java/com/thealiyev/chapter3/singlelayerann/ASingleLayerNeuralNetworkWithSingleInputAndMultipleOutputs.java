@@ -1,14 +1,14 @@
-package com.thealiyev.chapter3;
+package com.thealiyev.chapter3.singlelayerann;
 
 import java.util.ArrayList;
 
-public class ASimpleNeuralNetworkWithSingleInputAndMultipleOutputs {
+public class ASingleLayerNeuralNetworkWithSingleInputAndMultipleOutputs {
     private ArrayList<Double> wonPercent;
     private ArrayList<Double> inputs;
     private ArrayList<Double> weights;
     private ArrayList<Double> predictions;
 
-    public ASimpleNeuralNetworkWithSingleInputAndMultipleOutputs() {
+    public ASingleLayerNeuralNetworkWithSingleInputAndMultipleOutputs() {
         wonPercent = new ArrayList<>();
         wonPercent.add(0.65);
 

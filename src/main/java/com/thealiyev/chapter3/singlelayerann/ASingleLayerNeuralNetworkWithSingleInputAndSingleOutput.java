@@ -1,14 +1,14 @@
-package com.thealiyev.chapter3;
+package com.thealiyev.chapter3.singlelayerann;
 
 import java.util.ArrayList;
 
-public class ASimpleNeuralNetworkWithSingleInputAndSingleOutput {
+public class ASingleLayerNeuralNetworkWithSingleInputAndSingleOutput {
     private ArrayList<Double> toes;
     private double input;
     private double weight;
     private double prediction;
 
-    public ASimpleNeuralNetworkWithSingleInputAndSingleOutput() {
+    public ASingleLayerNeuralNetworkWithSingleInputAndSingleOutput() {
         toes = new ArrayList<>();
         toes.add(8.5);
         toes.add(9.5);

@@ -1,12 +1,8 @@
-package com.thealiyev.chapter3;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+package com.thealiyev.chapter3.singlelayerann;
 
 import java.util.ArrayList;
 
-public class ASimpleNeuralNetworkWithMultipleInputsAndMultipleOutputs {
-    private static final Logger LOGGER = LoggerFactory.getLogger(ASimpleNeuralNetworkWithMultipleInputsAndMultipleOutputs.class);
+public class ASingleLayerNeuralNetworkWithMultipleInputsAndMultipleOutputs {
 
     private ArrayList<Double> theNumberOfToesPerPlayer;
     private ArrayList<Double> wonPercent;
@@ -18,7 +14,7 @@ public class ASimpleNeuralNetworkWithMultipleInputsAndMultipleOutputs {
     private ArrayList<Double> predictionsVector;
     private ArrayList<ArrayList<Double>> predictionsMatrix;
 
-    public ASimpleNeuralNetworkWithMultipleInputsAndMultipleOutputs() {
+    public ASingleLayerNeuralNetworkWithMultipleInputsAndMultipleOutputs() {
         theNumberOfToesPerPlayer = new ArrayList<>();
         theNumberOfToesPerPlayer.add(8.5);
         theNumberOfToesPerPlayer.add(9.5);
@@ -68,14 +64,14 @@ public class ASimpleNeuralNetworkWithMultipleInputsAndMultipleOutputs {
 
     public void predict() {
         double prediction;
-
         predictionsMatrix = new ArrayList<>();
-        for (int firstVector = 0; firstVector < inputsMatrix.size(); firstVector = firstVector + 1) {
+
+        for (int firstCounter = 0; firstCounter < inputsMatrix.size(); firstCounter = firstCounter + 1) {
             predictionsVector = new ArrayList<>();
-            for (int secondCounter = 0; secondCounter < inputsMatrix.get(firstVector).size(); secondCounter = secondCounter + 1) {
+            for (int secondCounter = 0; secondCounter < inputsMatrix.get(firstCounter).size(); secondCounter = secondCounter + 1) {
                 prediction = 0.0;
                 for (int thirdCounter = 0; thirdCounter < weightsMatrix.get(secondCounter).size(); thirdCounter = thirdCounter + 1) {
-                    prediction = prediction + inputsMatrix.get(firstVector).get(thirdCounter) * weightsMatrix.get(secondCounter).get(thirdCounter);
+                    prediction = prediction + inputsMatrix.get(firstCounter).get(thirdCounter) * weightsMatrix.get(secondCounter).get(thirdCounter);
                 }
                 predictionsVector.add(prediction);
             }
