@@ -88,9 +88,9 @@ public class AThreeLayersNeuralNetworkWithMultipleInputsAndMultipleOutputs {
 
     public ArrayList<ArrayList<Double>> predict(ArrayList<ArrayList<Double>> inputsMatrix, ArrayList<ArrayList<Double>> weightsMatrix) {
         double prediction;
+
         ArrayList<Double> predictionsVector;
         predictionsMatrix = new ArrayList<>();
-
         for (int firstCounter = 0; firstCounter < inputsMatrix.size(); firstCounter = firstCounter + 1) {
             predictionsVector = new ArrayList<>();
             for (int secondCounter = 0; secondCounter < weightsMatrix.size(); secondCounter = secondCounter + 1) {//!!!

@@ -1,4 +1,4 @@
-package com.thealiyev.chapter4.singlelayerann;
+package com.thealiyev.chapter4and5.singlelayerann;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -110,7 +110,6 @@ public class ASingleLayerNeuralNetworkWithMultipleInputsAndMultipleOutputs {
 
         double prediction;
         predictionsMatrix = new ArrayList<>();
-
         for (int iteration = 0; iteration < 1; iteration = iteration + 1) {
             predictionsVector = new ArrayList<>();
             for (int firstCounter = 0; firstCounter < weightsMatrix.size(); firstCounter = firstCounter + 1) {

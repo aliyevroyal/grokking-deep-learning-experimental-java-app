@@ -1,4 +1,4 @@
-package com.thealiyev.chapter4;
+package com.thealiyev.chapter4and5;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,8 +1,8 @@
-package com.thealiyev.chapter4;
+package com.thealiyev.chapter4and5;
 
-import com.thealiyev.chapter4.singlelayerann.ASingleLayerNeuralNetworkWithMultipleInputsAndMultipleOutputs;
-import com.thealiyev.chapter4.singlelayerann.ASingleLayerNeuralNetworkWithMultipleInputsAndSingleOutput;
-import com.thealiyev.chapter4.singlelayerann.ASingleLayerNeuralNetworkWithSingleInputAndMultipleOutputs;
+import com.thealiyev.chapter4and5.singlelayerann.ASingleLayerNeuralNetworkWithMultipleInputsAndMultipleOutputs;
+import com.thealiyev.chapter4and5.singlelayerann.ASingleLayerNeuralNetworkWithMultipleInputsAndSingleOutput;
+import com.thealiyev.chapter4and5.singlelayerann.ASingleLayerNeuralNetworkWithSingleInputAndMultipleOutputs;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

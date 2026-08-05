@@ -65,7 +65,6 @@ public class ASingleLayerNeuralNetworkWithMultipleInputsAndMultipleOutputs {
     public void predict() {
         double prediction;
         predictionsMatrix = new ArrayList<>();
-
         for (int firstCounter = 0; firstCounter < inputsMatrix.size(); firstCounter = firstCounter + 1) {
             predictionsVector = new ArrayList<>();
             for (int secondCounter = 0; secondCounter < inputsMatrix.get(firstCounter).size(); secondCounter = secondCounter + 1) {
