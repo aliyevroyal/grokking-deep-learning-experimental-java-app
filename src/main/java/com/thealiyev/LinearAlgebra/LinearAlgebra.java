@@ -148,12 +148,12 @@ public class LinearAlgebra {
         List<Double> resultVector;
         double result;
 
-        for (int row = 0; row < firstMatrix.size(); row = row + 1) {
+        for (int rowOfFirstMatrix = 0; rowOfFirstMatrix < firstMatrix.size(); rowOfFirstMatrix = rowOfFirstMatrix + 1) {
             resultVector = new ArrayList<>();
-            for (int column = 0; column < secondMatrix.get(0).size(); column = column + 1) {
+            for (int columnOfSecondMatrix = 0; columnOfSecondMatrix < secondMatrix.get(0).size(); columnOfSecondMatrix = columnOfSecondMatrix + 1) {
                 result = 0.0;
-                for (int counter = 0; counter < secondMatrix.size(); counter = counter + 1) {
-                    result = result + firstMatrix.get(row).get(counter) * secondMatrix.get(counter).get(column);
+                for (int rowOfSecondMatrix = 0; rowOfSecondMatrix < secondMatrix.size(); rowOfSecondMatrix = rowOfSecondMatrix + 1) {//or the number of columns of firstMatrix could be used...
+                    result = result + firstMatrix.get(rowOfFirstMatrix).get(rowOfSecondMatrix) * secondMatrix.get(rowOfSecondMatrix).get(columnOfSecondMatrix);
                 }
                 resultVector.add(result);
             }
